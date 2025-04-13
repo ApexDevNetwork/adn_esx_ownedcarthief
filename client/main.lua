@@ -278,7 +278,6 @@ AddEventHandler('esx_ownedcarthief:stealcar', function(item)
         return
     end
 
-    -- 💡 Aquí continúa el flujo normal del robo
     ESX.TriggerServerCallback('esx_ownedcarthief:isPlateTaken', function (isPlateTaken, canInteract, alarmSystem, alarmactive)
         systemType = alarmSystem or 0
 
