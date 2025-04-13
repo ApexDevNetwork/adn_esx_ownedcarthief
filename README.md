@@ -57,7 +57,7 @@ Puedes añadir más idiomas siguiendo la misma estructura.
 
 > Basado en un recurso con licencia GPLv3. Esta versión ha sido modificada para adaptarse a los estándares de ADN - ApexDev Network.
 
-# 📜 Changelog VERSIÓN 1.0.5 - `adn_esx_ownedcarthief` 
+# 📜 Changelog VERSIÓN 1.0.6 - `adn_esx_ownedcarthief` 
 
 ### 🔄 General
 - Renombrado el script de `esx_ownedcarthief` a `adn_esx_ownedcarthief`.
