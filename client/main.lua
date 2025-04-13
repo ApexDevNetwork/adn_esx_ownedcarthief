@@ -259,39 +259,38 @@ end)
 
 RegisterNetEvent('esx_ownedcarthief:stealcar')
 AddEventHandler('esx_ownedcarthief:stealcar', function(item)
-	vehicle, stoleCheck, timer = ESX.Game.GetVehicleInDirection(), false, 0
-	local playerPed = PlayerPedId()
-	local coords = GetEntityCoords(playerPed, true)
-	local itemUsed = item
+    vehicle, stoleCheck, timer = ESX.Game.GetVehicleInDirection(), false, 0
+    local playerPed = PlayerPedId()
+    local coords = GetEntityCoords(playerPed, true)
+    local itemUsed = item
+    local vehicleData = nil
 
-	if vehicle and vehicle ~= 0 then
-		local vehicleData = ESX.Game.GetVehicleProperties(vehicle)
-		if vehicleData and vehicleData.plate then
-			vehPlate = vehicleData.plate
-		else
-			ESX.ShowNotification(_U('invalid_vehicle_data'))
-			return
-		end
-	else
-		ESX.ShowNotification(_U('no_vehicle_nearby'))
-		return
-	end
+    if vehicle and vehicle ~= 0 then
+        vehicleData = ESX.Game.GetVehicleProperties(vehicle)
+        if vehicleData and vehicleData.plate then
+            vehPlate = vehicleData.plate
+        else
+            ESX.ShowNotification(_U('invalid_vehicle_data'))
+            return
+        end
+    else
+        ESX.ShowNotification(_U('no_vehicle_nearby'))
+        return
+    end
 
-	ESX.UI.Menu.CloseAll()
-	if IsAnyVehicleNearPoint(coords.x, coords.y, coords.z, 3.0) and vehicleData ~= nil then
-		ESX.TriggerServerCallback('esx_ownedcarthief:isPlateTaken', function (isPlateTaken, canInteract ,alarmSystem, alarmactive)
-			systemType = alarmSystem or 0
-			if isPlateTaken then
-				StartCarSteal(itemUsed, true, vehicleData, false)
-			elseif not isPlateTaken and not Config.OnlyPlayerCar then
-				StartCarSteal(itemUsed, false, vehicleData, true)
-			elseif not isPlateTaken and Config.OnlyPlayerCar then
-				ESX.ShowNotification(_U('not_work_with_npc'))
-			end
-		end, vehicleData.plate)
-	end
+    -- 💡 Aquí continúa el flujo normal del robo
+    ESX.TriggerServerCallback('esx_ownedcarthief:isPlateTaken', function (isPlateTaken, canInteract, alarmSystem, alarmactive)
+        systemType = alarmSystem or 0
+
+        if isPlateTaken then
+            StartCarSteal(itemUsed, true, vehicleData, false)
+        elseif not isPlateTaken and not Config.OnlyPlayerCar then
+            StartCarSteal(itemUsed, false, vehicleData, true)
+        elseif not isPlateTaken and Config.OnlyPlayerCar then
+            ESX.ShowNotification(_U('not_work_with_npc'))
+        end
+    end, vehicleData.plate)
 end)
-
 
 RegisterNetEvent('esx_ownedcarthief:alarminterfacemenu')
 AddEventHandler('esx_ownedcarthief:alarminterfacemenu', function()
