@@ -1,9 +1,9 @@
 Config = {}
 
 -- GENERAL SETTING
-Config.SuccesChance  = 60   --Cuántos % de probabilidad de desbloquear un coche. (0-100)
+Config.SuccesChance  = 60   --How many % chance of unlocking a car (0-100)
 Config.OnlyPlayerCar = true --Configura false si quieres que el coche npc funcione como picklock (true-false)
-Config.Locale        = 'es' --Set lang (fr-en-br)
+Config.Locale        = 'es' --Set lang (es-fr-en-br)
 
 -- POLICE
 Config.PoliceNumberRequired = 0    --Set how many cops is need to try stole a car. (0-64)
@@ -18,7 +18,7 @@ Config.ExpireVehicle     = 7     --Set how many days the player have to buy back
 Config.ResellPercentage  = 10    --Percent of original car price player get from selling car (1-100)
 Config.RebuyPercentage   = 15    --Percent of original car price player need to buy back the car (1-100)
 Config.NpcCarPrice       = 100   --Set the sell price for npc car (1-9999...)
-Config.PawnShopBLJob     = {	 --Aquí puede añadir trabajo no puede vender coche en PawnShop
+Config.PawnShopBLJob     = {	 --Here you can add work you can't sell car in PawnShop
 	{ JobName  = "police", },
 	{ JobName  = "mechanic", },
 	{ JobName  = "ambulance", }

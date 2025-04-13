@@ -1,5 +1,3 @@
-USE `essentialmode`;
-
 ALTER TABLE `owned_vehicles` ADD `security` int(1) NOT NULL DEFAULT '0' COMMENT 'Alarme no nível do sistema' AFTER `owner`;
 ALTER TABLE `owned_vehicles` ADD `alarmactive` int(1) NOT NULL DEFAULT '0' COMMENT 'Status sistema de alarme' AFTER `security`;
 

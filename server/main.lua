@@ -1,4 +1,4 @@
--- Adaptado para oxmysql por Carri - ByLcarma
+-- Adaptado oxmysql por Carri - ByLcarma
 ESX = exports['es_extended']:getSharedObject()
 
 local vehicles = nil

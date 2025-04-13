@@ -1,4 +1,4 @@
--- Añadir columnas al sistema de propiedad de vehículos
+--- Añadir columnas al sistema de propiedad de vehículos
 ALTER TABLE `owned_vehicles` ADD `security` int(1) NOT NULL DEFAULT '0' COMMENT 'Nivel del sistema de alarma' AFTER `owner`;
 ALTER TABLE `owned_vehicles` ADD `alarmactive` int(1) NOT NULL DEFAULT '0' COMMENT 'Estado del sistema de alarma' AFTER `security`;
 
