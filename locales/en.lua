@@ -14,7 +14,7 @@ Locales['en'] = {
   ['alarm2missing']       = 'You do not have an emergency liaison module',
   ['alarm3missing']       = 'You do not have a GPS continuous positioning module',
   ['invalid_vehicle_data'] = 'This vehicle cannot be correctly identified.',
-  ['no_vehicle_nearby'] = 'There is no vehicle nearby.',
+  ['no_vehicle_nearby']   = 'This vehicle has no owner.',
 
   --Pawnshop
   ['pawnshop_menu_title'] = 'Pawn Shop',

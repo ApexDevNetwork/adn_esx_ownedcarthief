@@ -14,7 +14,7 @@ Locales['br'] = {
   ['alarm2missing']  = 'Você não possui um módulo de ligação de emergência',
   ['alarm3missing']  = 'Você não possui um módulo de posicionamento contínuo GPS',
   ['invalid_vehicle_data'] = 'Este veículo não pode ser identificado corretamente',
-  ['no_vehicle_nearby'] = 'Não há nenhum veículo nas proximidades.',
+  ['no_vehicle_nearby'] = 'Este veículo não tem proprietário',
 
   --Pawnshop
   ['pawnshop_menu_title'] = 'negociação com receptador',

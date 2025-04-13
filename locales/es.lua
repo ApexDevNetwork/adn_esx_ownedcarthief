@@ -14,7 +14,7 @@ Locales['es'] = {
   ['alarm2missing'] = 'No dispone de un módulo de enlace de emergencia',
   ['alarm3missing'] = 'No dispone de módulo de posicionamiento continuo GPS',
   ['invalid_vehicle_data'] = 'Este vehículo no se puede identificar correctamente.',
-  ['no_vehicle_nearby'] = 'No hay ningún vehículo cerca.',
+  ['no_vehicle_nearby'] = 'Este vehículo no tiene propietario.',
 
   --Casa de empeño
   ['pawnshop_menu_title'] = 'Casa de empeño',

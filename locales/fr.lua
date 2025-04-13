@@ -14,7 +14,7 @@ Locales['fr'] = {
   ['alarm2missing']  = 'Vous n\'avez pas de module de liaison avec les urgences',
   ['alarm3missing']  = 'Vous n\'avez pas de module de positionnement continu GPS',
   ['invalid_vehicle_data'] = 'Ce véhicule ne peut pas être identifié correctement',
-  ['no_vehicle_nearby'] = 'Il ny a pas de véhicule à proximité',
+  ['no_vehicle_nearby'] = 'Ce véhicule n`a pas de propriétaire',
 
   --Pawnshop
   ['pawnshop_menu_title'] = 'Pawn Shop',
