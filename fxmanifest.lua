@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Carri - ByLcarma'
 description 'adn_esx_ownedcarthief - Sistema de robo y alarmas de vehículos para ESX (adaptado a oxmysql)'
-version '1.0.5'
+version '1.0.6'
 
 -- Servidor
 server_scripts {
